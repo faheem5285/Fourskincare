@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Gentle Cleansing Foam',
       price: 25.00,
       category: 'cleanser',
-      image: 'assets\0 (8).jpg',
+      image: '\assets\0 (8).jpg',
       description: 'a soft foaming cleanser that gently removes impurities without stripping the skin.'
     },
     {
