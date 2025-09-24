@@ -1323,7 +1323,7 @@ body.dark-mode .cart-sidebar {
 .left-card-myphone {
   width: 250px; 
   height: 350px;
-  background: url('https://i.natgeofe.com/k/327b01e8-be2e-4694-9ae9-ae7837bd8aea/mallard-male-swimming.jpg') center/cover no-repeat;
+  background: url('assets/0\ \(12\).jpg') center/cover no-repeat;
   top: 50px; 
   left: 40%;
   transform: translateX(-50%) translateZ(-200px);
@@ -1333,7 +1333,7 @@ body.dark-mode .cart-sidebar {
 .center-card-myphone {
   width: 280px; 
   height: 400px;
-  background: url('https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?cs=srgb&dl=pexels-packermann-1666021.jpg&fm=jpg') center/cover no-repeat;
+  background: url('assets/0\ \(1\).jpg') center/cover no-repeat;
   border: 8px solid #000;
   border-radius: 20px;
   top: 25px; 
@@ -1345,7 +1345,7 @@ body.dark-mode .cart-sidebar {
 .right-card-myphone {
   width: 250px; 
   height: 350px;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFphNl3Fc7ffPSnbgUkCV_hjMre0cIN3ZJuA&s') center/cover no-repeat;
+  background: url('assets/0\ \(15\).jpg') center/cover no-repeat;
   top: 50px; 
   left: 60%;
   transform: translateX(-50%) translateZ(-200px);
