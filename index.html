@@ -66,74 +66,64 @@
     </div>
   </header>
 
-<!-- Added margin-top to prevent overlap with fixed header -->
-<section class="relative flex flex-col items-center justify-center px-6 py-16 text-center mt-20">
-  <!-- Hero Heading -->
-  <h2 class="text-4xl md:text-5xl font-extrabold leading-snug text-gray-900 max-w-3xl">
-    Discover Skincare That <span class="text-green-700">Loves You Back</span>
-  </h2>
-  <p class="mt-4 text-lg text-gray-600 max-w-xl">
-    Clean, natural, and effective beauty products designed to nourish your skin every day.
-  </p>
-  <div class="mt-6 flex gap-4">
-    <button class="px-6 py-3 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 transition">Shop Now</button>
-    <button class="px-6 py-3 rounded-full border border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">Learn More</button>
-  </div>
-
-  <!-- Image Showcase -->
-  <div class="flex items-center justify-center mt-16 gap-6 relative mb-16">
-    <!-- Left Image -->
-    <div class="transform -rotate-6 shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition">
-      <img src="assets\0 (14).jpg" 
-           alt="Skincare product" class="w-56 h-56 object-cover">
-    </div>
-
-    <!-- Center Image -->
-    <div class="shadow-2xl rounded-2xl overflow-hidden border-4 border-white z-10 hover:scale-110 transition">
-      <img src="assets\0 (2).jpg" 
-           alt="Model with skincare" class="w-80 h-80 object-cover">
-    </div>
-
-    <!-- Right Image -->
-    <div class="transform rotate-6 shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition">
-      <img src="assets\0 (8).jpg" 
-           alt="Skincare products" class="w-56 h-56 object-cover">
-    </div>
-  </div>
-</section>
-
-<main>
-  <!-- Featured Products Section -->
-  <section id="products" class="products-section">
+  <!-- Hero Section -->
+  <section class="hero-section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <h2 class="section-title">Featured Products</h2>
-        <p class="section-subtitle">Handcrafted with natural ingredients for your skin's perfect care</p>
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Skincare That <span>Loves You Back</span></h1>
+        <p class="hero-subtitle">Clean, natural, and effective beauty products designed to nourish your skin every day.</p>
+        <div class="hero-buttons">
+          <button class="hero-button primary">Shop Now</button>
+          <button class="hero-button secondary">Learn More</button>
+        </div>
       </div>
       
-      <div class="search-results" id="searchResults">
-        <h3>Search Results</h3>
-        <div class="search-results-grid"></div>
-      </div>
-
-      <div class="product-tabs" data-aos="fade-up">
-        <button class="tab-button active" data-category="all">All Products</button>
-        <button class="tab-button" data-category="cleanser">Cleansers</button>
-        <button class="tab-button" data-category="moisturizer">Moisturizers</button>
-        <button class="tab-button" data-category="serum">Serums</button>
-        <button class="tab-button" data-category="mask">Masks</button>
-      </div>
-
-      <div class="product-grid" id="productGrid" data-aos="fade-up" data-aos-delay="200"></div>
-      
-      <div class="view-all-container" data-aos="fade-up">
-        <a href="products.html" class="view-all-btn">
-          <span>View All Products</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
+      <div class="hero-images">
+        <div class="hero-image left">
+          <img src="assets/0 (14).jpg" alt="Skincare product">
+        </div>
+        <div class="hero-image center">
+          <img src="assets/0 (2).jpg" alt="Model with skincare">
+        </div>
+        <div class="hero-image right">
+          <img src="assets/0 (8).jpg" alt="Skincare products">
+        </div>
       </div>
     </div>
   </section>
+
+  <main>
+    <!-- Featured Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Handcrafted with natural ingredients for your skin's perfect care</p>
+        </div>
+        
+        <div class="search-results" id="searchResults">
+          <h3>Search Results</h3>
+          <div class="search-results-grid"></div>
+        </div>
+
+        <div class="product-tabs" data-aos="fade-up">
+          <button class="tab-button active" data-category="all">All Products</button>
+          <button class="tab-button" data-category="cleanser">Cleansers</button>
+          <button class="tab-button" data-category="moisturizer">Moisturizers</button>
+          <button class="tab-button" data-category="serum">Serums</button>
+          <button class="tab-button" data-category="mask">Masks</button>
+        </div>
+
+        <div class="product-grid" id="productGrid" data-aos="fade-up" data-aos-delay="200"></div>
+        
+        <div class="view-all-container" data-aos="fade-up">
+          <a href="products.html" class="view-all-btn">
+            <span>View All Products</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- Poster Section -->
     <div class="body-myphone">
@@ -210,7 +200,7 @@
           </div>
         </div>
         <div class="footer-contact">
-          <h3>Get in Touh</h3>
+          <h3>Get in Touch</h3>
           <div class="contact-info">
             <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
             <p><i class="fas fa-envelope"></i> hello@fourskincare.com</p>

@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('header').classList.toggle('scrolled', window.scrollY > 100);
   });
 
-  // Products Management
-  let products = JSON.parse(localStorage.getItem('products')) || [
+  // Products Management - FIXED IMAGE URLs
+  let products = [
     {
       id: 1,
       name: 'Gentle Cleansing Foam',
       price: 25.00,
       category: 'cleanser',
-      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80',
+      image: 'assets/0 (14).jpg',
       description: 'A soft foaming cleanser that gently removes impurities without stripping the skin.'
     },
     {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Hydrating Moisturizer',
       price: 35.00,
       category: 'moisturizer',
-      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80',
+      image: 'assets/0 (2).jpg',
       description: 'Deeply hydrating cream with hyaluronic acid and natural oils for all-day moisture.'
     },
     {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Vitamin C Serum',
       price: 45.00,
       category: 'serum',
-      image: 'https://images.unsplash.com/photo-1556228578-0d85b1c2c3c3?auto=format&fit=crop&q=80',
+      image: 'assets/0 (13).jpg',
       description: 'Brightening serum with stable vitamin C to even skin tone and reduce dark spots.'
     },
     {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Clay Detox Mask',
       price: 30.00,
       category: 'mask',
-      image: 'https://images.unsplash.com/photo-1556228453-efd6c0ff04f6?auto=format&fit=crop&q=80',
+      image: 'assets/0 (8).jpg',
       description: 'Purifying clay mask that draws out toxins and unclogs pores for clearer skin.'
     },
     {
@@ -65,11 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Revitalizing Eye Cream',
       price: 40.00,
       category: 'serum',
-      image: 'https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?auto=format&fit=crop&q=80',
+      image: 'assets/0 (12).jpg',
       description: 'Nourishing eye cream that reduces puffiness and dark circles with natural extracts.'
     }
   ];
-  localStorage.setItem('products', JSON.stringify(products));
 
   // Populate Product Grid
   const productGrid = document.getElementById('productGrid');
