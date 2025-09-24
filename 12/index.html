@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Skincare - Premium Natural Organic Skincare Products</title>
+  <meta name="description" content="Discover luxury natural and organic skincare products at Four Skincare. Premium organic skincare for radiant, healthy skin.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>   
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <i class="fas fa-spa logo-icon"></i>
+        <span class="logo-text">Four Skincare</span>
+      </div>
+      <div class="loading-spinner">
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+      </div>
+      <p class="loading-text">Preparing your beauty experience...</p>
+    </div>
+  </div>
+
+  <!-- Enhanced Header -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="assets/png.png" alt="Four Skincare Logo" class="logo-img">
+          <span class="logo-text">FourSkin</span>
+        </a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#ingredients" class="nav-link">Ingredients</a></li>
+          <li><a href="#routines" class="nav-link">Routines</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search products..." aria-label="Search products">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <button class="cart-toggle" id="cartToggle" aria-label="Shopping cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-background">
+        <div class="hero-particles"></div>
+        <div class="hero-gradient"></div>
+      </div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-badge">New Collection 2025</span>
+            <h1 class="hero-title">
+              <span class="title-line">Transform Your Skin</span>
+              <span class="title-line highlight">With Nature's Power</span>
+              <span class="title-line">Experience Radiant Beauty</span>
+            </h1>
+            <p class="hero-description">
+              Discover our revolutionary skincare collection featuring premium organic ingredients, 
+              scientifically proven formulas, and luxurious textures that deliver visible results.
+            </p>
+            
+            <div class="hero-buttons">
+              <button class="btn btn-primary">
+                <span>Explore Collection</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <button class="btn btn-secondary">
+                <span>Watch Video</span>
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="hero-images">
+              <div class="hero-image main-image">
+                <img src="assets/0 (14).jpg" alt="Premium skincare product" loading="lazy">
+                <div class="image-glow"></div>
+              </div>
+              <div class="hero-image side-image-1">
+                <img src="assets/0 (12).jpg" alt="Natural ingredients" loading="lazy">
+              </div>
+              <div class="hero-image side-image-2">
+                <img src="assets/0 (13).jpg" alt="Skincare routine" loading="lazy">
+              </div>
+            </div>
+            
+            <div class="floating-features">
+              <div class="feature-bubble">
+                <i class="fas fa-leaf"></i>
+                <span>100% Natural</span>
+              </div>
+              <div class="feature-bubble">
+                <i class="fas fa-heart"></i>
+                <span>Cruelty Free</span>
+              </div>
+              <div class="feature-bubble">
+                <i class="fas fa-certificate"></i>
+                <span>Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50000">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="98">0</div>
+            <div class="stat-label">% Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="25">0</div>
+            <div class="stat-label">Premium Products</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <span class="scroll-text">Scroll to explore</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Premium Collection</span>
+          <h2 class="section-title">Featured Skincare Products</h2>
+          <p class="section-subtitle">Handcrafted with natural ingredients for your skin's perfect care</p>
+        </div>
+        
+        <div class="product-tabs">
+          <button class="tab-button active" data-category="all">
+            <i class="fas fa-star"></i>
+            <span>All Products</span>
+          </button>
+          <button class="tab-button" data-category="cleanser">
+            <i class="fas fa-soap"></i>
+            <span>Cleansers</span>
+          </button>
+          <button class="tab-button" data-category="moisturizer">
+            <i class="fas fa-tint"></i>
+            <span>Moisturizers</span>
+          </button>
+          <button class="tab-button" data-category="serum">
+            <i class="fas fa-eye-dropper"></i>
+            <span>Serums</span>
+          </button>
+          <button class="tab-button" data-category="mask">
+            <i class="fas fa-mask"></i>
+            <span>Masks</span>
+          </button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="ingredients-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Natural Power</span>
+          <h2 class="section-title">Premium Natural Ingredients</h2>
+          <p class="section-subtitle">Discover the power of nature's finest botanicals in every product</p>
+        </div>
+        
+        <div class="ingredients-grid">
+          <div class="ingredient-card">
+            <div class="ingredient-image">
+              <img src="assets/0 (14).jpg" alt="Hyaluronic Acid" loading="lazy">
+              <div class="ingredient-overlay"></div>
+            </div>
+            <div class="ingredient-content">
+              <h3>Hyaluronic Acid</h3>
+              <p>Deeply hydrates and plumps skin, holding up to 1000x its weight in water.</p>
+              <div class="ingredient-benefits">
+                <span class="benefit-tag">Hydrating</span>
+                <span class="benefit-tag">Anti-Aging</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ingredient-card">
+            <div class="ingredient-image">
+              <img src="assets/0 (2).jpg" alt="Vitamin C" loading="lazy">
+              <div class="ingredient-overlay"></div>
+            </div>
+            <div class="ingredient-content">
+              <h3>Vitamin C</h3>
+              <p>Powerful antioxidant that brightens skin and stimulates collagen production.</p>
+              <div class="ingredient-benefits">
+                <span class="benefit-tag">Brightening</span>
+                <span class="benefit-tag">Antioxidant</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ingredient-card">
+            <div class="ingredient-image">
+              <img src="assets/0 (8).jpg" alt="Niacinamide" loading="lazy">
+              <div class="ingredient-overlay"></div>
+            </div>
+            <div class="ingredient-content">
+              <h3>Niacinamide</h3>
+              <p>Minimizes pores and regulates oil production for smoother skin texture.</p>
+              <div class="ingredient-benefits">
+                <span class="benefit-tag">Pore Control</span>
+                <span class="benefit-tag">Oil Control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Routines Section -->
+    <section id="routines" class="routines-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Expert Guidance</span>
+          <h2 class="section-title">Personalized Skincare Routines</h2>
+          <p class="section-subtitle">Find the perfect routine for your skin type and concerns</p>
+        </div>
+        
+        <div class="routine-tabs">
+          <button class="routine-tab active" data-routine="morning">
+            <i class="fas fa-sun"></i>
+            <span>Morning Routine</span>
+          </button>
+          <button class="routine-tab" data-routine="evening">
+            <i class="fas fa-moon"></i>
+            <span>Evening Routine</span>
+          </button>
+        </div>
+        
+        <div class="routine-content">
+          <div class="routine-panel active" id="morning-routine">
+            <div class="routine-steps">
+              <div class="routine-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>Gentle Morning Cleanser</h3>
+                  <p>Start your day by removing overnight impurities with our gentle foaming cleanser.</p>
+                </div>
+                <div class="step-image">
+                  <img src="assets/0 (14).jpg" alt="Morning cleanser" loading="lazy">
+                </div>
+              </div>
+              
+              <div class="routine-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>Brightening Vitamin C Serum</h3>
+                  <p>Apply our vitamin C serum to protect against environmental damage.</p>
+                </div>
+                <div class="step-image">
+                  <img src="assets/0 (2).jpg" alt="Vitamin C serum" loading="lazy">
+                </div>
+              </div>
+              
+              <div class="routine-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>Hydrating Day Moisturizer</h3>
+                  <p>Nourish your skin with our lightweight daily moisturizer.</p>
+                </div>
+                <div class="step-image">
+                  <img src="assets/0 (13).jpg" alt="Day moisturizer" loading="lazy">
+                </div>
+              </div>
+              
+              <div class="routine-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h3>SPF Protection</h3>
+                  <p>Finish with broad-spectrum SPF 30+ to protect against UV damage.</p>
+                </div>
+                <div class="step-image">
+                  <img src="assets/0 (8).jpg" alt="SPF protection" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fixed Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Customer Love</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">Real results from real people who transformed their skin</p>
+        </div>
+        
+        <div class="testimonials-container">
+          <div class="testimonials-slider">
+            <div class="testimonial-track" id="testimonialTrack">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <div class="testimonial-avatar">
+                    <img src="assets/0 (2).jpg" alt="Sarah Johnson" loading="lazy">
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Sarah Johnson</h4>
+                    <span class="customer-type">Verified Customer</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>"Four Skincare completely transformed my skin! The vitamin C serum gave me the glow I've been searching for years. My friends keep asking what I'm using!"</p>
+                </div>
+                <div class="testimonial-meta">
+                  <span class="product-used">Used: Vitamin C Serum</span>
+                  <span class="review-date">2 months ago</span>
+                </div>
+              </div>
+              
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <div class="testimonial-avatar">
+                    <img src="assets/0 (8).jpg" alt="Michael Chen" loading="lazy">
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Michael Chen</h4>
+                    <span class="customer-type">Premium Member</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>"As someone with sensitive skin, finding the right products was challenging. Four Skincare's gentle cleanser is a game-changer - effective yet gentle!"</p>
+                </div>
+                <div class="testimonial-meta">
+                  <span class="product-used">Used: Gentle Cleanser</span>
+                  <span class="review-date">3 weeks ago</span>
+                </div>
+              </div>
+              
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <div class="testimonial-avatar">
+                    <img src="assets/0 (12).jpg" alt="Emma Rodriguez" loading="lazy">
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Emma Rodriguez</h4>
+                    <span class="customer-type">VIP Member</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>"The retinol serum reduced my fine lines significantly in just 6 weeks. The quality and results are incredible. I'm a customer for life!"</p>
+                </div>
+                <div class="testimonial-meta">
+                  <span class="product-used">Used: Retinol Serum</span>
+                  <span class="review-date">1 month ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-controls">
+            <button class="testimonial-btn prev" id="prevTestimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots" id="testimonialDots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="testimonial-btn next" id="nextTestimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fixed About Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Our Mission</span>
+          <h2 class="section-title">About Four Skincare</h2>
+          <p class="section-subtitle">Pioneering natural beauty through science and innovation</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Founded on the belief that everyone deserves healthy, radiant skin</h3>
+            <p>Four Skincare combines the best of nature and science to create products that truly work. Our team of skincare experts and chemists work tirelessly to source the finest natural ingredients and develop innovative formulations that deliver real results.</p>
+            
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="value-content">
+                  <h4>Sustainability First</h4>
+                  <p>Committed to eco-friendly practices and sustainable sourcing</p>
+                </div>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="value-content">
+                  <h4>Science-Backed</h4>
+                  <p>Every formula is clinically tested and dermatologist approved</p>
+                </div>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="value-content">
+                  <h4>Cruelty-Free</h4>
+                  <p>Never tested on animals, always ethically produced</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number" data-count="50000">0</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-count="100">0</div>
+                <div class="stat-label">% Natural Ingredients</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-count="5">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-visual">
+            <div class="about-image">
+              <img src="assets/0 (8).jpg" alt="Our laboratory" loading="lazy">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Expert Insights</span>
+          <h2 class="section-title">Skincare Tips & Latest Trends</h2>
+          <p class="section-subtitle">Expert advice and insights for your best skin ever</p>
+        </div>
+        
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/0 (14).jpg" alt="Skincare routine guide" loading="lazy">
+              <div class="blog-category">Skincare Guide</div>
+            </div>
+            <div class="blog-content">
+              <h3>The Complete Skincare Routine Guide for Beginners</h3>
+              <p>Learn how to build an effective skincare routine from scratch with our comprehensive guide.</p>
+              <div class="blog-meta">
+                <span class="blog-author">Dr. Sarah Chen</span>
+                <span class="blog-date">March 15, 2024</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/0 (2).jpg" alt="Vitamin C benefits" loading="lazy">
+              <div class="blog-category">Ingredients</div>
+            </div>
+            <div class="blog-content">
+              <h3>Why Vitamin C Should Be in Every Skincare Routine</h3>
+              <p>Discover the amazing benefits of vitamin C for your skin and how to use it effectively.</p>
+              <div class="blog-meta">
+                <span class="blog-author">Dr. Michael Kim</span>
+                <span class="blog-date">March 12, 2024</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/0 (8).jpg" alt="Natural ingredients" loading="lazy">
+              <div class="blog-category">Natural Beauty</div>
+            </div>
+            <div class="blog-content">
+              <h3>5 Natural Ingredients That Transform Your Skin</h3>
+              <p>Explore the power of nature's finest ingredients for revolutionary skincare results.</p>
+              <div class="blog-meta">
+                <span class="blog-author">Dr. Emma Wilson</span>
+                <span class="blog-date">March 10, 2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Enhanced Footer -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/png.png" alt="Four Skincare Logo" class="logo-img">
+              <span class="logo-text">FourSkin</span>
+            </a>
+            <p class="footer-description">
+              Natural beauty solutions for healthier, radiant skin. Crafted with love and the finest organic ingredients from around the world.
+            </p>
+            <div class="footer-certifications">
+              <div class="cert-badge">
+                <i class="fas fa-leaf"></i>
+                <span>Organic Certified</span>
+              </div>
+              <div class="cert-badge">
+                <i class="fas fa-heart"></i>
+                <span>Cruelty Free</span>
+              </div>
+              <div class="cert-badge">
+                <i class="fas fa-certificate"></i>
+                <span>Dermatologist Tested</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#routines">Routines</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="#">Cleansers</a></li>
+                <li><a href="#">Moisturizers</a></li>
+                <li><a href="#">Serums</a></li>
+                <li><a href="#">Masks</a></li>
+                <li><a href="#">Sun Care</a></li>
+                <li><a href="#">Body Care</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Customer Care</h4>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Connect</h4>
+              <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@fourskincare.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Beauty Lane, NYC</p>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for the latest skincare tips and exclusive offers</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            <p>&copy; 2024 Four Skincare. All rights reserved.</p>
+            <div class="legal-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="footer-awards">
+            <span class="award">Best Natural Skincare 2024</span>
+            <span class="award">Customer Choice Award</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Shopping Cart</h3>
+      <button class="cart-close" id="cartClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <span>PKR <span id="cartSubtotal">0.00</span></span>
+        </div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span>PKR <span id="cartTotal">0.00</span></span>
+        </div>
+      </div>
+      <div class="cart-actions">
+        <button class="btn btn-secondary view-cart">View Cart</button>
+        <button class="btn btn-primary checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal quick-view-modal" id="quickViewModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="quick-view-content">
+        <div class="product-image">
+          <img src="" alt="" id="modalProductImage">
+        </div>
+        <div class="product-info">
+          <h3 id="modalProductName"></h3>
+          <p class="product-price" id="modalProductPrice"></p>
+          <p class="product-description" id="modalProductDescription"></p>
+          <div class="product-actions">
+            <button class="btn btn-primary" id="modalAddToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
