@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Skincare - Natural Organic Skincare Products</title>
+  <meta name="description" content="Discover natural and organic skincare products at Four Skincare. Premium organic skincare for all skin types.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>   
+
+<body>
+  <!-- Animated Background -->
+  <div class="bg-animation"></div>
+  
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Shapes -->
+  <div class="shape circle"></div>
+  <div class="shape square"></div>
+  <div class="shape triangle"></div>
+  <div class="shape hexagon"></div>
+  <div class="shape diamond"></div>
+  <div class="shape jar"></div>
+  <div class="shape tube"></div>
+  <div class="shape bottle"></div>
+  <div class="shape dropper"></div>
+  <div class="shape spray"></div>
+  <div class="shape compact"></div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Four Skincare</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search products..." aria-label="Search products">
+            <i class="fas fa-search search-icon" aria-label="Search"></i>
+          </div>
+          <button class="cart-toggle" id="cartToggle" aria-label="Shopping cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Skincare That <span>Loves You Back</span></h1>
+        <p class="hero-subtitle">Clean, natural, and effective beauty products designed to nourish your skin every day.</p>
+        <div class="hero-buttons">
+          <button class="hero-button primary">Shop Now</button>
+          <button class="hero-button secondary">Learn More</button>
+        </div>
+      </div>
+      
+      <div class="hero-images">
+        <div class="hero-image left">
+          <img src="assets/0 (14).jpg" alt="Skincare product">
+        </div>
+        <div class="hero-image center">
+          <img src="assets/0 (2).jpg" alt="Model with skincare">
+        </div>
+        <div class="hero-image right">
+          <img src="assets/0 (8).jpg" alt="Skincare products">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Featured Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Handcrafted with natural ingredients for your skin's perfect care</p>
+        </div>
+        
+        <div class="search-results" id="searchResults">
+          <h3>Search Results</h3>
+          <div class="search-results-grid"></div>
+        </div>
+
+        <div class="product-tabs" data-aos="fade-up">
+          <button class="tab-button active" data-category="all">All Products</button>
+          <button class="tab-button" data-category="cleanser">Cleansers</button>
+          <button class="tab-button" data-category="moisturizer">Moisturizers</button>
+          <button class="tab-button" data-category="serum">Serums</button>
+          <button class="tab-button" data-category="mask">Masks</button>
+        </div>
+
+        <div class="product-grid" id="productGrid" data-aos="fade-up" data-aos-delay="200"></div>
+        
+        <div class="view-all-container" data-aos="fade-up">
+          <a href="products.html" class="view-all-btn">
+            <span>View All Products</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poster Section -->
+    <div class="body-myphone">
+      <section class="poster-section-myphone" id="posterSectionMyphone">
+        <div class="container-myphone">
+          <!-- Left Card -->
+          <div class="poster-card-myphone left-card-myphone">
+            <div class="card-info-myphone">
+              <h3 class="card-title-myphone">Midnight Thriller</h3>
+              <p class="card-description-myphone">A suspenseful journey through the night</p>
+              <div class="card-meta-myphone">
+                <span><i class="fas fa-clock"></i> 120 min</span>
+                <span><i class="fas fa-star"></i> 4.7</span>
+              </div>
+            </div>
+           </div>
+
+          <!-- Center Card -->
+          <div class="poster-card-myphone center-card-myphone">
+            <div class="card-info-myphone">
+              <h3 class="card-title-myphone">Epic Adventure</h3>
+              <p class="card-description-myphone">The journey of a lifetime awaits</p>
+              <div class="card-meta-myphone">
+                <span><i class="fas fa-clock"></i> 150 min</span>
+                <span><i class="fas fa-star"></i> 4.9</span>
+              </div>
+            </div>
+           </div>
+
+          <!-- Right Card -->
+          <div class="poster-card-myphone right-card-myphone">
+            <div class="card-info-myphone">
+              <h3 class="card-title-myphone">Romantic Evening</h3>
+              <p class="card-description-myphone">A tale of love and destiny</p>
+              <div class="card-meta-myphone">
+                <span><i class="fas fa-clock"></i> 110 min</span>
+                <span><i class="fas fa-star"></i> 4.5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Four Skincare</a>
+          <p>Natural beauty solutions for a healthier, radiant you. Crafted with love and the finest organic ingredients.</p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-section">
+            <h3>Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Categories</h3>
+            <ul class="footer-links">
+              <li><a href="#">Cleansers</a></li>
+              <li><a href="#">Moisturizers</a></li>
+              <li><a href="#">Serums</a></li>
+              <li><a href="#">Masks</a></li>
+              <li><a href="#">Sun Care</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h3>Get in Touch</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> hello@fourskincare.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Natural Beauty Way<br>Organic City, OC 12345</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Four Skincare. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Sidebar -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <strong>Total: PKR<span id="cartTotal">0.00</span></strong>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal quick-view-modal" id="quickViewModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <img class="quick-view-image" src="" alt="">
+      <div class="quick-view-info">
+        <h3 class="quick-view-name"></h3>
+        <p class="quick-view-price"></p>
+        <p class="quick-view-description"></p>
+        <button class="product-button add-to-cart">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <canvas id="particles-canvas"></canvas>
+  <script src="script.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

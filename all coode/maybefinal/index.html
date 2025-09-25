@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdn.tailwindcss.com"></script>
 </head>   
 
 <body>
@@ -25,7 +24,7 @@
                 <img src="image.png" alt="FourSkin Logo" class="logo-img">
                 <div class="logo-glow"></div>
             </div>
-           
+            <span class="logo-text">Four Skincare</span>
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i>Home</a></li>
@@ -41,13 +40,18 @@
                 <i class="fas fa-search search-icon"></i>
                 <div class="search-suggestions"></div>
             </div>
-      
+            <button class="action-btn cart-btn" aria-label="Shopping cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
             <button class="action-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
                 <i class="fas fa-moon" id="themeIcon"></i>
             </button>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-           
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
     </nav>
   </header>
@@ -58,9 +62,38 @@
     <div class="hero-particles"></div>
     <div class="container">
       <div class="new-hero-content" data-scroll-animate="fade-up">
-      
+        <div class="hero-badge">
+          <i class="fas fa-sparkles"></i>
+          <span class="badge-text">New Collection 2025</span>
+        </div>
+        <h1 class="new-hero-title">
+          <span class="title-line">Transform Your Skin</span>
+          <span class="title-line gradient-text">With Nature's Power</span>
+          <span class="title-line">Experience Radiant Beauty</span>
+        </h1>
+        <p class="new-hero-subtitle">
+          Discover our revolutionary skincare collection featuring premium organic ingredients, 
+          scientifically proven formulas, and luxurious textures that deliver visible results 
+          for all skin types.
+        </p>
+        
         <!-- ANIMATED PRODUCT ICONS -->
-        <div class="hero-visual">     
+        <div class="hero-visual">
+          <div class="product-showcase">
+            <div class="floating-product" data-delay="0">
+              <img src="assets/0 (14).jpg" alt="Cleanser">
+              <div class="product-glow"></div>
+            </div>
+            <div class="floating-product" data-delay="200">
+              <img src="assets/0 (12).jpg" alt="Serum">
+              <div class="product-glow"></div>
+            </div>
+            <div class="floating-product" data-delay="400">
+              <img src="assets/0 (13).jpg" alt="Moisturizer">
+              <div class="product-glow"></div>
+            </div>
+          </div>
+          
           <div class="icon-grid">
             <div class="icon-item" data-animate="bounce">
               <i class="fas fa-leaf"></i>
@@ -126,44 +159,7 @@
       </div>
     </div>
   </section>
-<div class="bg-gradient-to-b from-green-50 to-white text-gray-800 font-sans">
-  <!-- Hero Section -->
-  <section class="relative flex flex-col items-center justify-center px-6 py-16 text-center">
 
-    <!-- Hero Heading -->
-    <h2 class="text-4xl md:text-5xl font-extrabold leading-snug text-gray-900 max-w-3xl">
-      Discover Skincare That <span class="text-green-700">Loves You Back</span>
-    </h2>
-    <p class="mt-4 text-lg text-gray-600 max-w-xl">
-      Clean, natural, and effective beauty products designed to nourish your skin every day.
-    </p>
-    <div class="mt-6 flex gap-4">
-      <button class="px-6 py-3 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 transition">Shop Now</button>
-      <button class="px-6 py-3 rounded-full border border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">Learn More</button>
-    </div>
-
-    <!-- Image Showcase -->
-    <div class="flex items-center justify-center mt-16 gap-6 relative">
-      <!-- Left Image -->
-      <div class="transform -rotate-6 shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/gh-best-skincare-products-6557978b58b57.png?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*" 
-             alt="Skincare product" class="w-56 h-56 object-cover">
-      </div>
-
-      <!-- Center Image -->
-      <div class="shadow-2xl rounded-2xl overflow-hidden border-4 border-white z-10 hover:scale-110 transition">
-        <img src="https://www.justmylook.com/cdn/shop/articles/Introducing-Korean-Skin-Care.png?v=1725350079" 
-             alt="Model with skincare" class="w-80 h-80 object-cover">
-      </div>
-
-      <!-- Right Image -->
-      <div class="transform rotate-6 shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="https://post.healthline.com/wp-content/uploads/2021/10/1587874-13-Best-Natural-Skin-Care-Products-1296x728-Header-81b9bf.jpg" 
-             alt="Skincare products" class="w-56 h-56 object-cover">
-      </div>
-    </div>
-  </section>
-</div>
   <main>
     <!-- Enhanced Featured Products Section -->
     <section id="products" class="products-section enhanced-section">
@@ -637,6 +633,126 @@
     </section>
 
   </main>
+
+  <!-- PROFESSIONAL REDESIGNED FOOTER -->
+  <footer class="footer enhanced-footer">
+    <div class="footer-background"></div>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand enhanced-footer-brand">
+          <a href="#" class="logo footer-logo">
+            <div class="logo-container">
+              <img src="image.png" alt="Four Skincare Logo" class="logo-img">
+              <div class="logo-glow"></div>
+            </div>
+            <span class="logo-text">Four Skincare</span>
+          </a>
+          <p class="brand-description">Premium natural skincare solutions crafted with organic ingredients for radiant, healthy skin.</p>
+          
+          <div class="footer-certifications">
+            <div class="certification-badge">
+              <i class="fas fa-leaf"></i>
+              <span>Certified Organic</span>
+            </div>
+            <div class="certification-badge">
+              <i class="fas fa-heart"></i>
+              <span>Cruelty-Free</span>
+            </div>
+            <div class="certification-badge">
+              <i class="fas fa-recycle"></i>
+              <span>Eco-Friendly</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-links-group enhanced-footer-links">
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul class="footer-links">
+              <li><a href="#products">All Products</a></li>
+              <li><a href="#products">Cleansers</a></li>
+              <li><a href="#products">Serums</a></li>
+              <li><a href="#products">Moisturizers</a></li>
+              <li><a href="#products">Masks</a></li>
+              <li><a href="#products">New Arrivals</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul class="footer-links">
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Ingredients</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-contact enhanced-footer-contact">
+          <h3>Stay Connected</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="046c6168686b44626b7176776f6d6a676576612a676b69">[email&#160;protected]</a></p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-map-marker-alt"></i> Los Angeles, CA</p>
+          </div>
+          
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Get skincare tips and exclusive offers</p>
+            <form class="footer-newsletter-form">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+          </div>
+          
+          <div class="social-links enhanced-social-links">
+            <a href="#" class="social-link instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link facebook" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link twitter" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link tiktok" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom enhanced-footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 Four Skincare. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Enhanced Quick View Modal -->
   <div class="modal quick-view-modal enhanced-modal" id="quickViewModal">
     <div class="modal-content">
@@ -674,57 +790,6 @@
     </div>
   </div>
 
-
-
-  <footer class="myfooter">
-        <div class="myfooter-container">
-            <div class="myfooter-content">
-                <div class="myfooter-column">
-                    <h3>About Four Skincare</h3>
-                    <p style="color: white;">We are committed to creating natural, organic skincare products that nourish your skin without harmful chemicals.</p>
-                    <div class="myfooter-social">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                <div class="myfooter-column">
-                    <h3>Quick Links</h3>
-                    <div class="myfooter-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms & Conditions</a>
-                    </div>
-                </div>
-                <div class="myfooter-column">
-                    <h3>Categories</h3>
-                    <div class="myfooter-links">
-                        <a href="#">Cleansers</a>
-                        <a href="#">Moisturizers</a>
-                        <a href="#">Serums</a>
-                        <a href="#">Masks</a>
-                        <a href="#">Sun Care</a>
-                    </div>
-                </div>
-                <div class="myfooter-column">
-                    <h3>Contact Info</h3>
-                    <div class="myfooter-links">
-                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                        <a href="mailto:info@fourskincare.com">info@fourskincare.com</a>
-                        <a href="#">123 Natural Beauty Way<br>Organic City, OC 12345</a>
-                    </div>
-                </div>
-            </div>
-            <div class="myfooter-bottom">
-                <p style="color: white;">&copy; 2023 Four Skincare. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js" defer></script>
-<script src="script.js"></script>
 </body>
 </html>
